@@ -1,5 +1,5 @@
 {
-  "name": "@prettier/lua-formatter",
+  "name": "lua-formatter",
   "version": "1.0.0",
   "description": "Prettier Lua Formatter",
   "main": "src",
