@@ -1,6 +1,6 @@
 {
-  "name": "lua-formatter",
-  "version": "1.0.0",
+  "name": "@elsongabriel/lua-formatter",
+  "version": "1.0.1",
   "description": "Prettier Lua Formatter",
   "main": "src",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elsongabriel/plugin-lua.git"
+    "url": "git+https://github.com/elsongabriel/lua-formatter.git"
   },
   "keywords": [
     "prettier",
@@ -53,9 +53,9 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/elsongabriel/plugin-lua/issues"
+    "url": "https://github.com/elsongabriel/lua-formatter/issues"
   },
-  "homepage": "https://github.com/elsongabriel/plugin-lua#readme",
+  "homepage": "https://github.com/elsongabriel/lua-formatter#readme",
   "directories": {
     "test": "tests"
   }

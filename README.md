@@ -68,28 +68,28 @@ end
 yarn:
 
 ```bash
-yarn add --dev prettier lua-formatter
+yarn add --dev prettier @elsongabriel/lua-formatter
 # or globally
-yarn global add prettier lua-formatter
+yarn global add prettier @elsongabriel/lua-formatter
 ```
 
 npm:
 
 ```bash
-npm install --save-dev prettier lua-formatter
+npm install --save-dev prettier @elsongabriel/lua-formatter
 # or globally
-npm install --global prettier lua-formatter
+npm install --global prettier @elsongabriel/lua-formatter
 ```
 
 ## Use and Testing
 
-If you installed `lua-formatter` in your project, you can those scripts in your `package.json`
+If you installed `@elsongabriel/lua-formatter` in your project, you can those scripts in your `package.json`
 
 ```json
 "scripts": {
   "prettier": "prettier",
   "prettier:format": "prettier --write \"**/*.lua\"",
-  "prettier-test": "prettier --write path/to/file.lua"
+  "prettier:test": "prettier --write path/to/file.lua"
 }
 ```
 
@@ -114,7 +114,7 @@ If you installed globally, run
 prettier --write path/to/file.lua
 ```
 
-### Testing our `lua-formatter`
+### Testing our `@elsongabriel/lua-formatter`
 Check and format all files before you run in your project
 - First copy your lua file to lua-tests folder
 - Run command below
