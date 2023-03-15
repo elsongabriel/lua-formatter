@@ -1,11 +1,30 @@
 {
-  "name": "@prettier/plugin-lua-elson",
-  "version": "0.0.1",
-  "description": "Prettier Lua Plugin",
-  "repository": "prettier/plugin-lua-elson",
-  "author": "Suchipi <me@suchipi.com>",
-  "license": "MIT",
+  "name": "@prettier/lua-formatter",
+  "version": "1.0.0",
+  "description": "Prettier Lua Formatter",
   "main": "src",
+  "scripts": {
+    "test": "cross-env AST_COMPARE=1 jest",
+    "test:watch": "cross-env AST_COMPARE=1 jest --watchAll --updateSnapshot",
+    "lint:fix": "npx eslint --fix",
+    "prettier": "prettier --plugin=. --parser=lua",
+    "prettier:test": "prettier --write \"lua-tests/**/*.lua\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elsongabriel/plugin-lua.git"
+  },
+  "keywords": [
+    "prettier",
+    "lua",
+    "formatter",
+    "otservbr",
+    "opentibiabr",
+    "otserv",
+    "elson"
+  ],
+  "author": "Elson Costa",
+  "license": "MIT",
   "engines": {
     "node": ">=10.13.0"
   },
@@ -28,17 +47,16 @@
   "peerDependencies": {
     "prettier": ">=2.0.0"
   },
-  "scripts": {
-    "test": "cross-env AST_COMPARE=1 jest",
-    "test:watch": "cross-env AST_COMPARE=1 jest --watchAll --updateSnapshot",
-    "lint:fix": "npx eslint --fix",
-    "prettier": "prettier --plugin=. --parser=lua",
-    "prettier:test": "prettier --write \"lua-tests/**/*.lua\""
-  },
   "jest": {
     "projects": [
       "<rootDir>/jest.*.config.js"
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/elsongabriel/plugin-lua/issues"
+  },
+  "homepage": "https://github.com/elsongabriel/plugin-lua#readme",
+  "directories": {
+    "test": "tests"
   }
 }
-
