@@ -14,9 +14,9 @@ const {
   hardline,
   softline,
   breakParent,
-} = require("prettier").doc.builders;
-const { willBreak } = require("prettier").doc.utils;
-const { makeString, isNextLineEmpty } = require("prettier").util;
+} = require("@elsongabriel/prettier").doc.builders;
+const { willBreak } = require("@elsongabriel/prettier").doc.utils;
+const { makeString, isNextLineEmpty } = require("@elsongabriel/prettier").util;
 const { isValidIdentifier, isExpression } = require("./util");
 const { printDanglingComments, isDanglingComment } = require("./comments");
 

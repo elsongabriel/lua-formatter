@@ -7,7 +7,7 @@
     "jest": true
   },
   "rules": {
-    "prettier/prettier": "warn"
+    "@elsongabriel/prettier": "warn"
   },
   "overrides": [
     {

@@ -35,14 +35,14 @@
     "luaparse": "0.2.1"
   },
   "devDependencies": {
+    "@elsongabriel/prettier": "^1.0.1",
     "cross-env": "^7.0.2",
     "eslint": "^7.7.0",
     "eslint-config-unobtrusive": "^1.2.5",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^24.9.0",
-    "jest-runner-eslint": "^0.10.0",
-    "prettier": "^2.8.4"
+    "jest-runner-eslint": "^0.10.0"
   },
   "peerDependencies": {
     "prettier": ">=2.0.0"

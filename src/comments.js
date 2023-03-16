@@ -1,8 +1,8 @@
 "use strict";
 
 const { addLeadingComment, addDanglingComment, addTrailingComment } =
-  require("prettier").util;
-const { concat, join, indent, hardline } = require("prettier").doc.builders;
+  require("@elsongabriel/prettier").util;
+const { concat, join, indent, hardline } = require("@elsongabriel/prettier").doc.builders;
 const { isValidIdentifier, isExpression } = require("./util");
 
 // https://github.com/prettier/prettier/blob/c052d9c0866025c6af1cf2e5ef086f53dc3effff/src/main/comments.js#L335
