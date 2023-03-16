@@ -68,32 +68,28 @@ end
 yarn:
 
 ```bash
-yarn add --dev prettier @elsongabriel/lua-formatter
-# or globally
-yarn global add prettier @elsongabriel/lua-formatter
+yarn add --dev @elsongabriel/prettier @elsongabriel/lua-formatter
 ```
 
 npm:
 
 ```bash
-npm install --save-dev prettier @elsongabriel/lua-formatter
-# or globally
-npm install --global prettier @elsongabriel/lua-formatter
+npm install --save-dev @elsongabriel/prettier @elsongabriel/lua-formatter
 ```
 
 ## Use and Testing
 
-If you installed `@elsongabriel/lua-formatter` in your project, you can those scripts in your `package.json`
+If you installed `@elsongabriel/lua-formatter` in your project, you can add those scripts in your `package.json`
 
 ```json
 "scripts": {
-  "prettier": "prettier",
-  "prettier:format": "prettier --write \"**/*.lua\"",
-  "prettier:test": "prettier --write path/to/file.lua"
+  "prettier": "prettier --plugin=@elsongabriel/lua-formatter --parser=lua",
+  "prettier:format": "npm run prettier --write \"**/*.lua\"",
+  "prettier:test": "npm run prettier --write path/to/file.lua"
 }
 ```
 
-and then run it via
+and then run it via command
 
 ```bash
 # check and format all files
@@ -105,13 +101,6 @@ npm run prettier:format
 yarn run prettier --write path/to/file.lua
 # or
 npm run prettier --write path/to/file.lua
-
-```
-
-If you installed globally, run
-
-```bash
-prettier --write path/to/file.lua
 ```
 
 ### Testing our `@elsongabriel/lua-formatter`
@@ -133,7 +122,7 @@ For the moment, you can set up prettier to run on save like this:
 Install [save-autorun](https://atom.io/packages/save-autorun) and create a `.save.cson` file in your project with the following content:
 
 ```cson
-"**/*.lua": "prettier ${path} --write"
+"**/*.lua": "npm run prettier ${path} --write"
 ```
 
 ### VScode
@@ -145,7 +134,7 @@ Install [Run on Save](https://marketplace.visualstudio.com/items?itemName=emeral
   "commands": [
     {
       "match": "\\.lua$",
-        "cmd": "prettier ${file} --write"
+        "cmd": "npm run prettier ${file} --write"
     }
   ]
 }
@@ -185,14 +174,3 @@ Install [JsPrettier](https://packagecontrol.io/packages/JsPrettier) using [Packa
 ```
 
 Alternatively, `"custom_file_extensions": ["lua"]` can be added to the JsPrettier plugin user settings.
-
-## Contributing
-
-If you're interested in contributing to the development of Prettier for Lua, you can follow the [CONTRIBUTING guide from Prettier](https://github.com/prettier/prettier/blob/master/CONTRIBUTING.md), as it all applies to this repository too.
-
-To test it out on a Lua file:
-
-- Clone this repository.
-- Run `yarn`.
-- Create a file called `test.lua`.
-- Run `yarn prettier test.lua` to check the output.

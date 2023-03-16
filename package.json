@@ -23,7 +23,10 @@
     "otserv",
     "elson"
   ],
-  "author": "Elson Costa",
+  "contributors": [
+    "Suchipi <me@suchipi.com>",
+    "Elson Costa"
+  ],
   "license": "MIT",
   "engines": {
     "node": ">=10.13.0"
