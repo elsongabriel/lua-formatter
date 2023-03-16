@@ -1,6 +1,6 @@
 {
   "name": "@elsongabriel/lua-formatter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Prettier Lua Formatter",
   "main": "src",
   "scripts": {
@@ -8,7 +8,7 @@
     "test:watch": "cross-env AST_COMPARE=1 jest --watchAll --updateSnapshot",
     "lint:fix": "npx eslint --fix",
     "prettier": "prettier --plugin=. --parser=lua",
-    "prettier:test": "prettier --write \"lua-tests/**/*.lua\""
+    "prettier:test": "prettier --plugin=. --parser=lua --write \"lua-tests/**/*.lua\""
   },
   "repository": {
     "type": "git",
